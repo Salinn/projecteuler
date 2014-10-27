@@ -44,10 +44,11 @@ public class problem8 {
     public static long largest_product(ArrayList<Integer> int_nums){
         long largest_num = 0;
         for(int i = 0; i < int_nums.size()-12; i++){
-            long temp_num = int_nums.get(i) * int_nums.get(i+1) * int_nums.get(i+2) * int_nums.get(i+3) * int_nums.get(i+4) *
+            long temp_num = (long)int_nums.get(i) * int_nums.get(i+1) * int_nums.get(i+2) * int_nums.get(i+3) * int_nums.get(i+4) *
                     int_nums.get(i+5) * int_nums.get(i+6) * int_nums.get(i+7) * int_nums.get(i+8) * int_nums.get(i+9) *
                     int_nums.get(i+10) * int_nums.get(i+11) * int_nums.get(i+12);
             if(largest_num < temp_num){
+                System.out.println(largest_num);
                 largest_num = temp_num;
             }
         }
